@@ -1,6 +1,6 @@
 {
   "name": "function-prep",
-  "version": "1.0.0-1",
+  "version": "1.0.0",
   "description": "Prepare a preset function call, intuitively",
   "main": "index.js",
   "directories": {
