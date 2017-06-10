@@ -1,6 +1,6 @@
 {
   "name": "function-prep",
-  "version": "1.0.0-0",
+  "version": "1.0.0-1",
   "description": "Prepare a preset function call, intuitively",
   "main": "index.js",
   "directories": {
@@ -22,6 +22,7 @@
     "thenable",
     "arguments",
     "function call",
+    "utility function",
     "ecman"
   ],
   "author": "ecman <its.ec@outlook.com>",
