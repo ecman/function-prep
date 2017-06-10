@@ -1,0 +1,39 @@
+{
+  "name": "function-prep",
+  "version": "1.0.0-0",
+  "description": "Prepare a preset function call, intuitively",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "istanbul cover test",
+    "preversion": "npm test",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ecman/function-prep.git"
+  },
+  "keywords": [
+    "utility function",
+    "promises",
+    "then",
+    "thenable",
+    "arguments",
+    "function call",
+    "ecman"
+  ],
+  "author": "ecman <its.ec@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ecman/function-prep/issues"
+  },
+  "homepage": "https://github.com/ecman/function-prep#readme",
+  "engines": {
+    "node": ">=0.12.18"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5"
+  }
+}
