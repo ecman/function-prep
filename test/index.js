@@ -8,41 +8,41 @@ var message = "Hello World!";
 var expected = returnArg(message);
 var actual = returnArg.prep(message)();
 
-process.on('unhuandledRejection', function (err) {
+process.on('unhandledRejection', function (err) {
     throw err;
 });
 
 in1
 .then(function (waited) { 
     assert.strictEqual(waited, 1, 
-        'Pended resolved value should be 1 not ' + waited);
+        'Pend resolved value should be 1 not ' + waited);
 })
 
 .then(in2)
 .then(function (waited) { 
     assert.strictEqual(waited, 2, 
-        'Preped call return value should be 2 not ' + waited);
+        'Prep call return value should be 2 not ' + waited);
 })
 
 .then(function () {
     assert.strictEqual(
         actual, expected,
-        'Preped call returned "' + actual +
+        'Prep call returned "' + actual +
         '" but should return "' + expected + '"');
-    console.log('Preped call is OK');
+    console.log('Prep call OK');
 
     actual = returnArg.pend(message);
     assert.strictEqual(
         actual instanceof Promise, true,
-        'Pended value should be a Promise');
-    console.log('Pended value is OK');
+        'Pend return value should be a Promise');
+    console.log('Pend return value OK');
 
     actual.then(function (result) {
         assert.strictEqual(
             result, expected, 
-            'Pended call returned "' + result + 
+            'Pend call returned "' + result + 
             '" but should return "' + expected + '"');
-        console.log('Pended call is OK');
+        console.log('Pend call OK');
     });
 });
 
