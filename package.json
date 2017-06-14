@@ -1,7 +1,7 @@
 {
   "name": "function-prep",
-  "version": "1.0.1",
-  "description": "Prepare a preset function call, intuitively",
+  "version": "1.0.2",
+  "description": "Deprecated",
   "main": "index.js",
   "directories": {
     "test": "test"
